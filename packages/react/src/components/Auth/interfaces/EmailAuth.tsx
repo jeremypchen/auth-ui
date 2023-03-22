@@ -118,7 +118,7 @@ function EmailAuth({
       style={{ width: '100%' }}
     >
       <Container direction="vertical" gap="large" appearance={appearance}>
-        <Container direction="vertical" gap="large" appearance={appearance}>
+        {/* <Container direction="vertical" gap="large" appearance={appearance}>
           <div>
             <Label htmlFor="email" appearance={appearance}>
               {labels?.email_label}
@@ -156,7 +156,7 @@ function EmailAuth({
               appearance={appearance}
             />
           </div>
-        </Container>
+        </Container> */}
 
         <Button
           type="submit"
@@ -181,7 +181,7 @@ function EmailAuth({
                 {i18n?.magic_link?.link_text}
               </Anchor>
             )}
-            {authView === VIEWS.SIGN_IN && (
+            {/* {authView === VIEWS.SIGN_IN && (
               <Anchor
                 href="#auth-forgot-password"
                 onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -192,8 +192,8 @@ function EmailAuth({
               >
                 {i18n?.forgotten_password?.link_text}
               </Anchor>
-            )}
-            {authView === VIEWS.SIGN_IN ? (
+            )} */}
+            {/* {authView === VIEWS.SIGN_IN ? (
               <Anchor
                 href="#auth-sign-up"
                 onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -215,7 +215,7 @@ function EmailAuth({
               >
                 {i18n?.sign_in?.link_text}
               </Anchor>
-            )}
+            )} */}
           </Container>
         )}
       </Container>
